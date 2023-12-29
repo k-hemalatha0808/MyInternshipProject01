@@ -5,15 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-//import static sun.jvm.hotspot.runtime.PerfMemory.start;
-//import static sun.jvm.hotspot.runtime.PerfMemory.start;
 
 public class Quiz extends JFrame implements ActionListener{
 
 
-    String  questions[][] = new String[10][5];
-    String answers[][] = new String[10][2];
-    String useranswers[][] = new String[10][1];
+    String  [][] questions = new String[10][5];
+    String [][]answers = new String[10][2];
+    String [][] useranswers = new String[10][1];
     JLabel qno,question;
 
      JRadioButton opt1,opt2,opt3,opt4;
@@ -297,7 +295,7 @@ public class Quiz extends JFrame implements ActionListener{
 
 
     public void start(int count){
-        qno.setText("" + (count+1)+ ". ");
+        qno.setText(" " + (count+1)+ ". ");
         question.setText(questions[count][0]);
         opt1.setText(questions[count][1]);
         opt1.setActionCommand(questions[count][1]);

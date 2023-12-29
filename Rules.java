@@ -22,7 +22,7 @@ public class Rules extends JFrame implements ActionListener {
 
         JLabel rules = new JLabel();
         rules.setBounds(70,150,700,350);
-        rules.setFont(new Font("Tahoma",Font.PLAIN,16));
+        rules.setFont(new Font("Thoma",Font.PLAIN,16));
         rules.setForeground(new Color(22,99,54));
         rules.setText(
                 "<html>"+

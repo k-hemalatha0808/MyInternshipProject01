@@ -16,16 +16,11 @@ public class Login extends JFrame implements ActionListener {
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
-//        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/login.png"));
-//        Image i = i1.getImage().getScaledInstance(550,500,Image.SCALE_DEFAULT);
-//        ImageIcon i2 = new ImageIcon(i);
-//        JLabel image = new JLabel(i2);
-//       image.setBounds(450,0,550,500);
-//        add(image);
+
 
              JLabel heading = new JLabel( "QUIZ TEST");
              heading.setBounds(140,60,300,45);
-             heading.setFont(new Font("Viner Hand ITC",Font.BOLD,40));
+             heading.setFont(new Font("VINER Hand ITC",Font.BOLD,40));
              heading.setForeground(new Color(22,99,54));
              add(heading);
 

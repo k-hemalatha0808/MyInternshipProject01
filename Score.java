@@ -10,7 +10,7 @@ public class Score extends JFrame {
 
     Score(String name,int score){
 
-        JLabel heading = new JLabel("Thankyou" + name +"for playing Quiz test");
+        JLabel heading = new JLabel("Thank-you" + name +"for playing Quiz test");
         heading.setBounds(100,80,700,30);
         heading.setFont(new Font("Tahome", Font.BOLD,26));
         add(heading);
