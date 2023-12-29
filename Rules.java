@@ -15,14 +15,14 @@ public class Rules extends JFrame implements ActionListener {
 
         JLabel heading = new JLabel("Welcome" + name + "to Quiz test");
         heading.setBounds(150,100,700,30);
-        heading.setFont(new Font(" Viner Hand ITC",Font.BOLD,28));
+        heading.setFont(new Font("Viner Hand ITC",Font.BOLD,28));
         heading.setForeground(new Color(22,99,54));
         add(heading);
 
 
         JLabel rules = new JLabel();
         rules.setBounds(70,150,700,350);
-        rules.setFont(new Font("Thoma",Font.PLAIN,16));
+        rules.setFont(new Font("Tahoma",Font.PLAIN,16));
         rules.setForeground(new Color(22,99,54));
         rules.setText(
                 "<html>"+
@@ -51,8 +51,8 @@ public class Rules extends JFrame implements ActionListener {
         start.addActionListener(this);
         add(start);
 
-        setSize(1000,600);
-        setLocation(30,10);
+        setSize(800,650);
+        setLocation(350,100);
         setLayout(null);
         setUndecorated(true);
         setVisible(true);

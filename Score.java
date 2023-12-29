@@ -10,18 +10,18 @@ public class Score extends JFrame {
 
     Score(String name,int score){
 
-        JLabel heading = new JLabel("Thank-you" + name +"for playing Quiz test");
+        JLabel heading = new JLabel("Thankyou" + name +"for playing Quiz test");
         heading.setBounds(100,80,700,30);
-        heading.setFont(new Font("Tahoe", Font.BOLD,26));
+        heading.setFont(new Font("Tahome", Font.BOLD,26));
         add(heading);
 
         JLabel Score = new JLabel("your score is " + score);
         Score.setBounds(350,200,300,30);
-        Score.setFont(new Font("Tahoe", Font.BOLD,26));
+        Score.setFont(new Font("Tahome", Font.BOLD,26));
         add(Score);
 
         JButton exit = new JButton("TEXT");
-        exit.setBounds(380,270,120,50);
+        exit.setBounds(380,270,120,30);
         exit.setBackground(new Color(22,99,54));
         exit.setForeground(Color.WHITE);
         add(exit);
@@ -35,7 +35,7 @@ public class Score extends JFrame {
 
 
         setSize(1000,500);
-        setLocation(100,100);
+        setLocation(200,150);
         setLayout(null);
         setUndecorated(true);
         setVisible(true);

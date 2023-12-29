@@ -5,13 +5,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+//import static sun.jvm.hotspot.runtime.PerfMemory.start;
+//import static sun.jvm.hotspot.runtime.PerfMemory.start;
 
 public class Quiz extends JFrame implements ActionListener{
 
 
-    String  [][] questions = new String[10][5];
-    String [][]answers = new String[10][2];
-    String [][] useranswers = new String[10][1];
+    String  questions[][] = new String[10][5];
+    String answers[][] = new String[10][2];
+    String useranswers[][] = new String[10][1];
     JLabel qno,question;
 
      JRadioButton opt1,opt2,opt3,opt4;
@@ -31,12 +33,12 @@ public class Quiz extends JFrame implements ActionListener{
         this.name =name;
 
         qno = new JLabel();
-        qno.setBounds(50,50,100,50);
+        qno.setBounds(100,450,50,30);
         qno.setFont(new Font("Tahoma",Font.PLAIN,24));
         add(qno);
 
         question = new JLabel();
-        question.setBounds(150,50,800,30);
+        question.setBounds(150,450,50,30);
         question.setFont(new Font("Tahoma",Font.PLAIN,24));
         add(question);
 
@@ -113,25 +115,25 @@ public class Quiz extends JFrame implements ActionListener{
         answers[9][1] = "13";
 
         opt1 = new JRadioButton();
-        opt1.setBounds(150,160,800,30);
+        opt1.setBounds(170,520,700,30);
         opt1.setBackground(Color.WHITE);
         opt1.setFont(new Font("Dialog",Font.PLAIN,20));
         add(opt1);
 
         opt2 = new JRadioButton();
-        opt2.setBounds(150,200,800,30);
+        opt2.setBounds(170,560,700,30);
         opt2.setBackground(Color.WHITE);
         opt2.setFont(new Font("Dialog",Font.PLAIN,20));
         add(opt2);
 
         opt3 = new JRadioButton();
-        opt3.setBounds(150,240,800,30);
+        opt3.setBounds(170,600,700,30);
         opt3.setBackground(Color.WHITE);
         opt3.setFont(new Font("Dialog",Font.PLAIN,20));
         add(opt3);
 
         opt4 = new JRadioButton();
-        opt4.setBounds(150,280,800,30);
+        opt4.setBounds(170,640,700,30);
         opt4.setBackground(Color.WHITE);
         opt4.setFont(new Font("Dialog",Font.PLAIN,20));
         add(opt4);
@@ -145,21 +147,21 @@ public class Quiz extends JFrame implements ActionListener{
 
 
         next = new JButton("Next");
-        next.setBounds(500,300,150,50);
+        next.setBounds(1150,750,200,30);
         next.setBackground(new Color(22,99,54));
         next.setForeground(Color.WHITE);
         next.addActionListener(this);
         add(next);
 
         submit = new JButton("Submit");
-        submit.setBounds(300,300,150,50);
+        submit.setBounds(700,750,200,30);
         submit.setBackground(new Color(255,215,0));
         submit.setForeground(Color.BLACK);
         submit.addActionListener(this);
         add(submit);
 
         help = new JButton("Help");
-        help.setBounds(400,300,150,50);
+        help.setBounds(930,750,200,30);
         help.setBackground(new Color(22,99,54));
         help.setForeground(Color.WHITE);
         help.addActionListener(this);
@@ -168,8 +170,8 @@ public class Quiz extends JFrame implements ActionListener{
         start(count);
 
 
-        setSize(1000,800);
-        setLocation(10,10);
+        setSize(1350,850);
+        setLocation(30,0);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         setUndecorated(true);
@@ -237,9 +239,9 @@ public class Quiz extends JFrame implements ActionListener{
 
         String time ="time left - "+ timer +"seconds";
         g.setColor(Color.RED);
-        g.setFont(new Font("Tahoma",Font.BOLD,25));
+        g.setFont(new Font("Taqhoma",Font.BOLD,25));
         if(timer>0){
-            g.drawString(time,30,30);
+            g.drawString(time,1100,500);
         }else {
             g.drawString("Time up!!",1100,500);
         }
@@ -295,7 +297,7 @@ public class Quiz extends JFrame implements ActionListener{
 
 
     public void start(int count){
-        qno.setText(" " + (count+1)+ ". ");
+        qno.setText("" + (count+1)+ ". ");
         question.setText(questions[count][0]);
         opt1.setText(questions[count][1]);
         opt1.setActionCommand(questions[count][1]);
