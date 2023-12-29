@@ -15,7 +15,7 @@ public class Rules extends JFrame implements ActionListener {
 
         JLabel heading = new JLabel("Welcome" + name + "to Quiz test");
         heading.setBounds(150,100,700,30);
-        heading.setFont(new Font("Viner Hand ITC",Font.BOLD,28));
+        heading.setFont(new Font(" Viner Hand ITC",Font.BOLD,28));
         heading.setForeground(new Color(22,99,54));
         add(heading);
 

@@ -237,7 +237,7 @@ public class Quiz extends JFrame implements ActionListener{
 
         String time ="time left - "+ timer +"seconds";
         g.setColor(Color.RED);
-        g.setFont(new Font("Taqhoma",Font.BOLD,25));
+        g.setFont(new Font("Tahoma",Font.BOLD,25));
         if(timer>0){
             g.drawString(time,30,30);
         }else {

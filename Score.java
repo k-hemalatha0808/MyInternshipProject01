@@ -12,12 +12,12 @@ public class Score extends JFrame {
 
         JLabel heading = new JLabel("Thank-you" + name +"for playing Quiz test");
         heading.setBounds(100,80,700,30);
-        heading.setFont(new Font("Tahome", Font.BOLD,26));
+        heading.setFont(new Font("Tahoe", Font.BOLD,26));
         add(heading);
 
         JLabel Score = new JLabel("your score is " + score);
         Score.setBounds(350,200,300,30);
-        Score.setFont(new Font("Tahome", Font.BOLD,26));
+        Score.setFont(new Font("Tahoe", Font.BOLD,26));
         add(Score);
 
         JButton exit = new JButton("TEXT");
